@@ -465,7 +465,7 @@ li.carousel-indicator {
   text-indent: 0;
   line-height: 20px;
 }
-
+/* 
 .slider_section .carousel-item::before {
   content: '';
   position: absolute;
@@ -473,6 +473,10 @@ li.carousel-indicator {
   left: 0;
   width: 100%;
   height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0%, rgba(105, 145, 47, 0.21) 73.1%, rgba(143, 198, 64, 0.13) 100%);
+} */
+
+.image-bg-place {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0%, rgba(105, 145, 47, 0.21) 73.1%, rgba(143, 198, 64, 0.13) 100%);
 }
 

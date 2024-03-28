@@ -349,7 +349,10 @@
 }
 
 @media (max-width: 450px) {
-
+    .p-m-1 {
+        width: 100px !important;
+      }
+      
     h2,
     h3,
     h4 {

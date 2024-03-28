@@ -13,6 +13,8 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
+<link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/favicon.png">
 
     <title>ECO FLOFO</title>
 
@@ -206,28 +208,55 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
+              <div id="imagePlayer" class="w-100 h-100 position-relative">
+                <img class="position-absolute p-m-1" style="top: 50%; left: 50%; transform: translate(-50%, -50%);z-index: 8; width: 400px; opacity: .3;" src="/images/playbutton.png" alt="">
+                <img class="w-100 h-100" src="/images/placehoder.png" alt="">
+              </div>
               <video
+                style="display: none;"
                 id="videoPlayer"
                 class="w-100 h-100"
                 loop
-                autoplay
-                muted
-                src="https://streamable.com/l/5ox4n9/mp4.mp4"
+                playsinside
+
+                src="https://streamable.com/l/4tsbd3/mp4.mp4"
               ></video>
               <!-- <img src="images/slide2.gif" class="d-block w-100" alt="..." /> -->
             </div>
             <div class="carousel-item">
+              <div id="imagePlayer2">
+                <img class="position-absolute p-m-1" style="top: 50%; left: 50%; transform: translate(-50%, -50%);z-index: 8; width: 400px; opacity: .3;" src="/images/playbutton.png" alt="">
+                <img class="w-100 h-100" src="/images/placehoder.png" alt="">
+              </div>
               <video
+              style="display: none;"
+                id="videoPlayer2"
                 class="w-100 h-100"
                 loop
-                autoplay
-                muted
-                src="https://streamable.com/l/q0exhk/mp4.mp4"
+                playsinside
+                src="https://streamable.com/l/ajhfk7/mp4.mp4"
               ></video>
             </div>
           </div>
         </div>
       </section>
+      <script>
+        const imagePlayer= document.getElementById("imagePlayer")
+        const videoPlayer= document.getElementById("videoPlayer")
+        imagePlayer.onclick= function(e) {
+          videoPlayer.style.display= "block"
+          this.style.display= "none"
+          videoPlayer.play()
+        }
+
+        const imagePlayer2= document.getElementById("imagePlayer2")
+        const videoPlayer2= document.getElementById("videoPlayer2")
+        imagePlayer2.onclick= function(e) {
+          videoPlayer2.style.display= "block"
+          this.style.display= "none"
+          videoPlayer2.play()
+        }
+      </script>
       <!-- end slider section -->
       <div
         class="heading_container heading_center py-4 mb-4"
