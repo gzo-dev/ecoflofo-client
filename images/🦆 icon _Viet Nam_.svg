@@ -1,0 +1,29 @@
+<svg width="40" height="23" viewBox="0 0 40 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="&#240;&#159;&#166;&#134; icon &#34;Viet Nam&#34;">
+<g id="Mask group">
+<mask id="mask0_452_1018" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="23">
+<g id="Group">
+<path id="Vector" d="M0.14209 0.726685H39.6863V22.8588H0.14209V0.726685Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_452_1018)">
+<g id="Group_2">
+<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M0.14209 0.726685H39.6863V22.8588H0.14209V0.726685Z" fill="#F7FCFF"/>
+<path id="Vector_3" fill-rule="evenodd" clip-rule="evenodd" d="M0.14209 0.726685V22.8588H39.6863V0.726685H0.14209Z" fill="#E31D1C"/>
+<g id="Mask group_2">
+<mask id="mask1_452_1018" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="23">
+<g id="Group_3">
+<path id="Vector_4" fill-rule="evenodd" clip-rule="evenodd" d="M0.14209 0.726685V22.8588H39.6863V0.726685H0.14209Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask1_452_1018)">
+<g id="Group_4">
+<path id="Vector_5" fill-rule="evenodd" clip-rule="evenodd" d="M19.9909 15.4629L13.6258 18.4829L15.7608 13.1961L11.2207 9.74191L17.48 9.63987L20.2493 4.42053L22.7727 9.70882L29.0171 9.79015L24.3246 13.3076L26.5158 18.3371L19.9909 15.4629Z" fill="#FFD221"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

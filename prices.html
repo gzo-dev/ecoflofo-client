@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+    integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>ECO FLOFO</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+    integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="aos-master/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+        <div class="header_top">
+          <div class="container-fluid d-flex justify-content-between">
+            <div
+              class="m-custom-nav-container custom_nav-container mr-4"
+              style="opacity: 0"
+            >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="contact_nav mr-4 align-items-center">
+              <i aria-hidden="true"
+                ><img
+                  class="transToVi"
+                  src="images/🦆 icon _Viet Nam_.svg"
+                  alt=""
+              /></i>
+              <i aria-hidden="true"
+                ><img
+                  class="transtoEn"
+                  src="images/🦆 icon _Northern Ireland_.svg"
+                  alt=""
+              /></i>
+              <div class="icon-search text-white ml-3">
+                Tìm kiếm
+                <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                <div class="search-pc mt-2" style="">
+                  <form action="/search/" method="get" id="searchformtab">
+                    <input
+                      name="qr"
+                      id="qr_search"
+                      class="kw-mobile"
+                      placeholder="Tìm kiếm"
+                      type="text"
+                    />
+                    <a href="#" class="submit-search-pc" onClick="">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="closeX"
+                      onClick="$('.search-pc').hide(); return false;"
+                      >&#10005;</a
+                    >
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header_bottom">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+              <a class="navbar-brand" href="index">
+                <img src="images/logo2.png" alt="logo.png" />
+              </a>
+              <button
+                class="navbar-toggler d-navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index"
+                      >Trang chủ <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about"> Giới thiệu</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link"
+                      data-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Dịch vụ</a
+                    >
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="shipping"
+                        >Tư vấn vận chuyển</a
+                      >
+                      <a class="dropdown-item" href="service"
+                        >Kết nối thương mại</a
+                      >
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link"
+                      data-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Tin tức</a
+                    >
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="market-logistics"
+                        >Thị trường Logistics trong và ngoài nước</a
+                      >
+                      <a class="dropdown-item" href="global-market"
+                        >Thị trường xuất - nhập khẩu toàn cầu</a
+                      >
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="prices">Tra cứu giá</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+    <!-- end header section -->
+
+    <!-- slider section -->
+    <section class="slider_section-price">
+      <div class="responsive_image" style="background-image: url(images/price1.png)">
+        <h1>TRA CỨU GIÁ</h1>
+      </div>
+    </section>
+    <!-- end slider section -->
+
+    <div class="price_heading">
+      <h3 class="m-0">NHẬN THÔNG TIN</h3>
+    </div>
+
+    <section class="form_section">
+      <div class="container-fluid" style="padding: 0">
+        <div class="form-price" style="background: rgba(143, 198, 64, 0.11)">
+          <form>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Mặt hàng:</label>
+              <div class="col-lg-9 col-sm-12">
+                <input type="text" class="form-control" id="i-item" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Hs code:</label>
+              <div class="col-lg-9 col-sm-12">
+                <input type="text" class="form-control" id="i-hscode" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Điểm đi:</label>
+              <div class="col-lg-9 col-sm-12">
+                <input type="text" class="form-control" id="i-departure" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Điểm đến:</label>
+              <div class="col-lg-9 col-sm-12">
+                <input type="text" class="form-control" id="i-destination" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Trọng lượng:</label>
+              <div class="col-lg-9 col-sm-12">
+                <input type="text" class="form-control" id="i-weight" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="input" class="col-lg-3 col-sm-12 col-form-label">Điều kiện giao hàng:</label>
+              <div class="col-lg-9 col-sm-12">
+                <select class="custom-select" id="i-condition-delivery" required>
+                  <option value="EXW">EXW</option>
+                  <option value="FCA">FCA</option>
+                  <option value="FAS">FAS</option>
+                  <option value="FOB">FOB</option>
+                  <option value="CFR">CFR</option>
+                  <option value="CIF">CIF</option>
+                  <option value="CPT">CPT</option>
+                  <option value="CIP">CIP</option>
+                  <option value="DPU">DPU</option>
+                  <option value="DAP">DAP</option>
+                  <option value="DDP">DDP</option>
+                </select>
+              </div>
+              <div class="invalid-feedback">
+                Example invalid custom select feedback
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="input" class="col-lg-3 col-sm-12 col-form-label">Thời gian khởi hành dự kiến:</label>
+              <div class="col-lg-9 col-sm-12">
+                <div class="row mx-0">
+                  <div class="time col-lg-6 col-sm-12 row">
+                    <label for="input" class="col-form-label" style="padding-right: 10px;">Từ:</label>
+                    <div class="col-10">
+                      <input type="date" class="form-control" id="i-time-start" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 row">
+                    <label for="input" class="col-form-label">Đến:</label>
+                    <div class="col-10">
+                      <input type="date" class="form-control" id="i-time-end" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="input" class="col-lg-3 col-sm-12 col-form-label">Giá đề nghị cho cả lô hàng:</label>
+              <div class="col-lg-9 col-sm-12">
+                <div class="row">
+                  <div class="col-7">
+                    <input type="number" class="form-control" id="i-price" />
+                  </div>
+                  <div class="col-5">
+                    <select class="custom-select" id="i-unit" required>
+                      <option value="">Lựa chọn</option>
+                      <option value="1">VNĐ</option>
+                      <option value="2">USD</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="input" class="col-lg-3 col-sm-12 col-form-label">Chú thích thêm:</label>
+              <div class="col-lg-9 col-sm-12">
+                <textarea class="form-control" id="i-note"
+                  placeholder="Số lượng container, loại container, kích thước lô hàng lẻ, kích thước kho muốn thuê.."
+                  required></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="price_heading">
+      <h3 class="m-0">NHẬN BÁO GIÁ</h3>
+    </div>
+
+    <section class="form_section2">
+      <div class="container">
+        <div class="container-fluid px-0">
+          <p class="font-weight-bold">Chọn loại thành viên:</p>
+          <button type="button" class="btn mb-3 font-weight-bold" id="showFormBtn1">
+            Cá nhân
+          </button>
+          <button type="button" class="btn mb-3 font-weight-bold" id="showFormBtn2">
+            Công ty
+          </button>
+        </div>
+        <form id="myForm1" class="myForm layout_padding2-top">
+          <div class="form-group row">
+            <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Tên chủ hàng:</label>
+            <div class="col-lg-9 col-sm-12">
+              <input type="text" class="form-control" id="i-owner" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Quốc gia:</label>
+            <div class="col-lg-9 col-sm-12 row pr-0">
+              <div class="col-lg-5">
+                <input type="text" class="form-control" id="i-nation" />
+              </div>
+              <label for="input" class="col-2 col-form-label">Tỉnh/TP:</label>
+              <div class="col-lg-5 pr-0">
+                <input type="text" class="form-control" id="i-city" />
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Địa chỉ:</label>
+            <div class="col-lg-9 col-sm-12">
+              <input type="text" class="form-control" id="i-address" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Email:</label>
+            <div class="col-lg-9 col-sm-12">
+              <input type="email" class="form-control" id="i-email" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Di động:</label>
+            <div class="col-lg-9 col-sm-12 row pr-0" style="padding-left: 30px">
+              <select class="col-4 form-control" id="i-code-phone">
+                <option value="">Chọn mã số điện thoại</option>
+              </select>
+              <div class="col-8 pr-0">
+                <input type="number" class="form-control" id="i-phone" />
+              </div>
+            </div>
+          </div>
+          <div style="position: relative">
+            <p style="color: #728f47b8">Đính kèm danh thiếp của bạn</p>
+            <span id="file-name-display"></span>
+            <input style="
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  opacity: 0;
+                  z-index: 22;
+                  top: 0;
+                  left: 0;
+                  cursor: pointer;
+                " type="file" id="attachment" name="attachment"
+              accept=".txt,.pdf,.doc,.docx,image/jpeg,image/png,image/gif" />
+          </div>
+          <div class="form-group row">
+            <div class="col-10">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="i-accept" required />
+                <label class="form-check-label" for="invalidCheck2">
+                  Tôi đồng ý với điều khoản và chính sách của ECO FLOFO
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn mb-3 px-5 font-weight-bold"
+            style="background: #8fc640c9; margin-left: 30%" id="btn1-submit">
+            Gửi
+          </button>
+        </form>
+        <!--  -->
+        <form id="myForm2" class="myForm layout_padding2-top">
+          <div class="form-group row">
+            <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Tên công ty:</label>
+            <div class="col-lg-9 col-sm-12">
+              <input type="text" class="form-control" id="i-company" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Mã số thuế:</label>
+            <div class="col-lg-9 col-sm-12 row pr-0">
+              <div class="col-lg-5">
+                <input type="text" class="form-control" id="i-tax-code" />
+              </div>
+              <label for="input" class="col-2 col-form-label">Tỉnh/TP:</label>
+              <div class="col-lg-5 pr-0">
+                <input type="text" class="form-control" id="i-tax-place" />
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Quốc gia:</label>
+            <div class="col-lg-9 col-sm-12 row pr-0">
+              <div class="col-lg-5">
+                <input type="text" class="form-control" id="i-nation-company" />
+              </div>
+              <label for="input" class="col-2 col-form-label">Tỉnh/TP:</label>
+              <div class="col-lg-5 pr-0">
+                <input type="text" class="form-control" id="i-city-company" />
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Địa chỉ:</label>
+            <div class="col-lg-9 col-sm-12">
+              <input type="text" class="form-control" id="i-address-company" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Email:</label>
+            <div class="col-lg-9 col-sm-12">
+              <input type="email" class="form-control" id="i-email-company" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-lg-3 col-sm-12 col-form-label">Di động:</label>
+            <div class="col-lg-9 col-sm-12 row pr-0" style="padding-left: 30px">
+              <select class="col-4 form-control" id="i-code-phone-company">
+                <option value="">Chọn mã số điện thoại</option>
+              </select>
+              <div class="col-8 pr-0">
+                <input type="text" class="form-control" id="i-phone-company" />
+              </div>
+            </div>
+          </div>
+          <div style="position: relative">
+            <p style="color: #728f47b8">Đính kèm danh thiếp của bạn</p>
+            <span id="file-name-display-2"></span>
+            <input style="
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  opacity: 0;
+                  z-index: 22;
+                  top: 0;
+                  left: 0;
+                  cursor: pointer;
+                " type="file" id="attachment2" name="attachment"
+              accept=".txt,.pdf,.doc,.docx,image/jpeg,image/png,image/gif" />
+          </div>
+          <div class="form-group row">
+            <div class="col-10">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="i-accept-company" required />
+                <label class="form-check-label" for="invalidCheck2">
+                  Tôi đồng ý với điều khoản và chính sách của ECO FLOFO
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn mb-3 px-5 font-weight-bold"
+            style="background: #8fc640c9; margin-left: 30%" id="btn2-submit">
+            Gửi
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer_section">
+        <div class="container-fluid px-0">
+          <div class="footer_top">
+            <div class="container">
+              <div
+                class="logo-main"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
+                <img src="images/logo2.png" alt="" />
+              </div>
+              <div class="footer_top-desc">
+                <h3 class="text-white">ECO FLOFO</h3>
+                <p class="">
+                  Công ty TNHH Thương Mại Toàn Cầu Eco FloFo là một doanh nghiệp
+                  chuyên về lĩnh vực tư vấn vận chuyển & kết nối thương mại.
+                  Chúng tôi luôn lấy sự hài lòng của khách hàng là nền tảng cho
+                  sự phát triển.
+                </p>
+                <h3 class="text-white pt-2">KẾT NỐI VỚI CHÚNG TÔI</h3>
+                <div class="box">
+                  <div class="logo">
+                    <a href="https://www.facebook.com/profile.php?id=61555446590986" target="_blank">
+                      <img src="images/social media logo.svg" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo">
+                    <a href="https://zalo.me/0966678952" target="_blank">
+                      <img src="images/image 12.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo">
+                    <a href="https://www.linkedin.com/company/eco-flofo-globaltrading-comapny-limited/" target="_blank">
+                      <img
+                        src="images/Social Icons.svg"
+                        alt=""
+                        style="background-color: white"
+                      />
+                    </a>
+                  </div>
+                  <div class="logo">
+                    <a style="cursor: pointer;" onclick="return function(event) {event.preventDefault();};">
+                      <img src="images/message_icon.svg" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo">
+                    <a href="tel:0966678952">
+                      <img src="images/call.svg" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo">
+                    <a href="https://www.youtube.com/channel/UCU3itsfH9b6DpyCqtyOYGlA" target="_blank">
+                      <img src="images/social media logo (1).svg" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo">
+                    <a href="https://www.tiktok.com/@ecoflofo?_t=8kt4xoTMQKo&_r=1" target="_blank">
+                      <img src="images/Group 7.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_bottom" style="background-color: #b0c691">
+            <div class="container">
+              <div class="map_container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3188.995528700626!2d106.69423891971076!3d10.78705797112499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f34fbaf0eef%3A0xadf3a29ccdef1b77!2zMjA3YSDEkC4gTmd1eeG7hW4gVsSDbiBUaOG7pywgxJBhIEthbywgUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1705561698438!5m2!1svi!2s"
+                  width="350"
+                  height="250"
+                  style="border-radius: 10px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="support">
+                <h4>Dịch vụ của ECO FLOFO</h4>
+                <ul class="ulSp">
+                  <li>
+                    <strong><a href="shipping">Tư vấn vận chuyển</a></strong>
+                  </li>
+                  <li>
+                    <strong><a href="service">Kết nối thương mại</a></strong>
+                  </li>
+                </ul>
+              </div>
+              <div class="contact">
+                <h4>trụ sở chính</h4>
+                <ul>
+                  <li>
+                    <strong>Địa chỉ: </strong>207A đường Nguyễn Văn Thủ, phường
+                    Đa Kao, quận 1, thành phố Hồ Chí Minh, Việt Nam
+                  </li>
+                  <li><strong>Phone: </strong>+84 966 678 952</li>
+                  <li><strong>Email: </strong>sales@ecoflofotrading.com</li>
+                  <!-- <li>Fax:</li> -->
+                </ul>
+                <!-- <p>© 2024 Eco FloFo. All Rights Reserved.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- footer section -->
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/custom-prices.js"></script>
+
+  <script src="aos-master/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    function googleTranslateElementInit2() {
+      new google.translate.TranslateElement(
+        { pageLanguage: "vi", autoDisplay: false },
+        "google_translate_element2"
+      );
+    }
+    if (!window.gt_translate_script) {
+      window.gt_translate_script = document.createElement("script");
+      gt_translate_script.src =
+        "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2";
+      document.body.appendChild(gt_translate_script);
+    }
+  </script>
+  <script>
+    const fileInput = document.getElementById("attachment");
+    const fileInput2 = document.getElementById("attachment2");
+    const fileNameDisplay = document.getElementById("file-name-display");
+    const fileNameDisplay2 = document.getElementById("file-name-display-2");
+
+    fileInput.addEventListener("change", function () {
+      if (this.files.length > 0) {
+        const fileName = this.files[0].name;
+        fileNameDisplay.textContent = "Tên file đã chọn: " + fileName;
+      } else {
+        fileNameDisplay.textContent = "";
+      }
+    });
+    //
+    fileInput2.addEventListener("change", function () {
+      if (this.files.length > 0) {
+        const fileName = this.files[0].name;
+        fileNameDisplay2.textContent = "Tên file đã chọn: " + fileName;
+      } else {
+        fileNameDisplay2.textContent = "";
+      }
+    });
+  </script>
+  <script>
+    async function uploadFile() {
+      if (fileInput.files.length > 0) {
+        const file = fileInput.files[0];
+        const formData = new FormData();
+        formData.append("file", file);
+        const res = await axios({
+          url: "https://api.gzomedia.net/upload.php",
+          method: "post",
+          data: formData,
+        });
+        const result = await res.data;
+        return result;
+      } else {
+        return "";
+      }
+    }
+    //
+    async function uploadFile2() {
+      if (fileInput2.files.length > 0) {
+        const file = fileInput2.files[0];
+        const formData = new FormData();
+        formData.append("file", file);
+        const res = await axios({
+          url: "https://api.gzomedia.net/upload.php",
+          method: "post",
+          data: formData,
+        });
+        const result = await res.data;
+        return result;
+      } else {
+        return "";
+      }
+    }
+  </script>
+  <script>
+    function hasValueGreaterThanOne(object) {
+      for (let key in object) {
+        if (object.hasOwnProperty(key) && object[key].length <= 1) {
+          return false;
+        }
+      }
+      return true;
+    }
+  </script>
+  <script>
+    const btnsubmit1 = document.getElementById("btn1-submit");
+    const btnsubmit2 = document.getElementById("btn2-submit");
+    const i_item = document.getElementById("i-item");
+    const i_hscode = document.getElementById("i-hscode");
+    const i_departure = document.getElementById("i-departure");
+    const i_destination = document.getElementById("i-destination");
+    const i_weight = document.getElementById("i-weight");
+    const i_condition_delivery = document.getElementById(
+      "i-condition-delivery"
+    );
+    const i_time_start = document.getElementById("i-time-start");
+    const i_time_end = document.getElementById("i-time-end");
+    const i_price = document.getElementById("i-price");
+    const i_unit = document.getElementById("i-unit");
+    const i_note = document.getElementById("i-note");
+    const i_owner = document.getElementById("i-owner");
+    const i_nation = document.getElementById("i-nation");
+    const i_city = document.getElementById("i-city");
+    const i_address = document.getElementById("i-address");
+    const i_email = document.getElementById("i-email");
+    const i_code_phone = document.getElementById("i-code-phone");
+    const i_phone = document.getElementById("i-phone");
+    const i_accept = document.getElementById("i-accept");
+    //
+    const i_company = document.getElementById("i-company");
+    const i_tax_code = document.getElementById("i-tax-code");
+    const i_tax_place = document.getElementById("i-tax-place");
+    const i_nation_company = document.getElementById("i-nation-company");
+    const i_city_company = document.getElementById("i-city-company");
+    const i_address_company = document.getElementById("i-address-company");
+    const i_email_company = document.getElementById("i-email-company");
+    const i_code_phone_company = document.getElementById(
+      "i-code-phone-company"
+    );
+    const i_phone_company = document.getElementById("i-phone-company");
+    const i_accept_company = document.getElementById("i-accept-company");
+    btnsubmit1.onclick = async (e) => {
+      e.preventDefault();
+      const data = {
+        item: i_item.value,
+        hscode: i_hscode.value,
+        departure: i_departure.value,
+        destination: i_destination.value,
+        weight: i_weight.value,
+        condition_delivery: i_condition_delivery.value,
+        time_start: i_time_start.value,
+        time_end: i_time_end.value,
+        price: i_price.value,
+        unit: i_unit.value,
+        note: i_note.value,
+        owner: i_owner.value,
+        nation: i_nation.value,
+        city: i_city.value,
+        address: i_address.value,
+        email: i_email.value,
+        code_phone: i_code_phone.value,
+        phone: i_phone.value,
+        accept: i_accept.checked,
+        type: 1,
+      };
+      if (
+        data.item.trim().length <= 0 ||
+        data.hscode.trim().length <= 0 ||
+        data.departure.trim().length <= 0 ||
+        data.destination.trim().length <= 0 ||
+        data.weight.trim().length <= 0 ||
+        data.condition_delivery.trim().length <= 0 ||
+        data.time_start.trim().length <= 0 ||
+        data.time_end.trim().length <= 0
+      ) {
+        swal(
+          "Thông báo",
+          "Bạn phải điền đẩy đủ thông tin để tiếp tục",
+          "error"
+        );
+        return;
+      }
+      const fileUpload = await uploadFile();
+      console.log(fileUpload);
+      const res = await axios({
+        url: "https://shegarden.online/api/contact",
+        method: "post",
+        data: {
+          ...data,
+          file: fileUpload?.file_path || "",
+        },
+      });
+      const result = await res.data;
+      console.log(result);
+      swal(
+        "Thông báo",
+        "Đã gửi tra cứu thành công, chúng tôi sẽ sớm liên hệ lại bạn",
+        "success"
+      );
+
+      return result;
+    };
+
+    //
+
+    btnsubmit2.onclick = async (e) => {
+      e.preventDefault();
+      const data = {
+        item: i_item.value,
+        hscode: i_hscode.value,
+        departure: i_departure.value,
+        destination: i_destination.value,
+        weight: i_weight.value,
+        condition_delivery: i_condition_delivery.value,
+        time_start: i_time_start.value,
+        time_end: i_time_end.value,
+        price: i_price.value,
+        unit: i_unit.value,
+        note: i_note.value,
+        company: i_company.value,
+        tax_code: i_tax_code.value,
+        tax_place: i_tax_place.value,
+        nation: i_nation_company.value,
+        city: i_city_company.value,
+        address: i_address_company.value,
+        email: i_email_company.value,
+        code_phone: i_code_phone_company.value,
+        phone: i_phone_company.value,
+        accept: i_accept_company.checked,
+        type: 2,
+      };
+      if (
+        data.item.trim().length <= 0 ||
+        data.hscode.trim().length <= 0 ||
+        data.departure.trim().length <= 0 ||
+        data.destination.trim().length <= 0 ||
+        data.weight.trim().length <= 0 ||
+        data.condition_delivery.trim().length <= 0 ||
+        data.time_start.trim().length <= 0 ||
+        data.time_end.trim().length <= 0
+      ) {
+        swal(
+          "Thông báo",
+          "Bạn phải điền đẩy đủ thông tin để tiếp tục",
+          "error"
+        );
+        return;
+      }
+      const fileUpload = await uploadFile2();
+      const res = await axios({
+        url: "https://shegarden.online/api/contact",
+        method: "post",
+        data: {
+          ...data,
+          file: fileUpload?.file_path || "",
+        },
+      });
+      const result = await res.data;
+      console.log(result);
+      swal(
+        "Thông báo",
+        "Đã gửi tra cứu thành công, chúng tôi sẽ sớm liên hệ lại bạn",
+        "success"
+      );
+      return result;
+    };
+  </script>
+  <script>
+    var countryCodes = [
+      { label: "Afghanistan (+93)", value: "Afghanistan (+93)" },
+      { label: "Albania (+355)", value: "Albania (+355)" },
+      { label: "Algeria (+213)", value: "Algeria (+213)" },
+      { label: "American Samoa (+1-684)", value: "American Samoa (+1-684)" },
+      { label: "Andorra (+376)", value: "Andorra (+376)" },
+      { label: "Angola (+244)", value: "Angola (+244)" },
+      { label: "Anguilla (+1-264)", value: "Anguilla (+1-264)" },
+      {
+        label: "Antigua and Barbuda (+1-268)",
+        value: "Antigua and Barbuda (+1-268)",
+      },
+      { label: "Argentina (+54)", value: "Argentina (+54)" },
+      { label: "Armenia (+374)", value: "Armenia (+374)" },
+      { label: "Aruba (+297)", value: "Aruba (+297)" },
+      { label: "Australia (+61)", value: "Australia (+61)" },
+      { label: "Austria (+43)", value: "Austria (+43)" },
+      { label: "Azerbaijan (+994)", value: "Azerbaijan (+994)" },
+      { label: "Bahamas (+1-242)", value: "Bahamas (+1-242)" },
+      { label: "Bahrain (+973)", value: "Bahrain (+973)" },
+      { label: "Bangladesh (+880)", value: "Bangladesh (+880)" },
+      { label: "Barbados (+1-246)", value: "Barbados (+1-246)" },
+      { label: "Belarus (+375)", value: "Belarus (+375)" },
+      { label: "Belgium (+32)", value: "Belgium (+32)" },
+      { label: "Belize (+501)", value: "Belize (+501)" },
+      { label: "Benin (+229)", value: "Benin (+229)" },
+      { label: "Bermuda (+1-441)", value: "Bermuda (+1-441)" },
+      { label: "Bhutan (+975)", value: "Bhutan (+975)" },
+      { label: "Bolivia (+591)", value: "Bolivia (+591)" },
+      {
+        label: "Bosnia and Herzegovina (+387)",
+        value: "Bosnia and Herzegovina (+387)",
+      },
+      { label: "Botswana (+267)", value: "Botswana (+267)" },
+      { label: "Brazil (+55)", value: "Brazil (+55)" },
+      {
+        label: "British Indian Ocean Territory (+246)",
+        value: "British Indian Ocean Territory (+246)",
+      },
+      {
+        label: "British Virgin Islands (+1-284)",
+        value: "British Virgin Islands (+1-284)",
+      },
+      { label: "Brunei (+673)", value: "Brunei (+673)" },
+      { label: "Bulgaria (+359)", value: "Bulgaria (+359)" },
+      { label: "Burkina Faso (+226)", value: "Burkina Faso (+226)" },
+      { label: "Burundi (+257)", value: "Burundi (+257)" },
+      { label: "Cambodia (+855)", value: "Cambodia (+855)" },
+      { label: "Cameroon (+237)", value: "Cameroon (+237)" },
+      { label: "Canada (+1)", value: "Canada (+1)" },
+      { label: "Cape Verde (+238)", value: "Cape Verde (+238)" },
+      { label: "Cayman Islands (+1-345)", value: "Cayman Islands (+1-345)" },
+      {
+        label: "Central African Republic (+236)",
+        value: "Central African Republic (+236)",
+      },
+      { label: "Chad (+235)", value: "Chad (+235)" },
+      { label: "Chile (+56)", value: "Chile (+56)" },
+      { label: "China (+86)", value: "China (+86)" },
+      { label: "Christmas Island (+61)", value: "Christmas Island (+61)" },
+      { label: "Cocos Islands (+61)", value: "Cocos Islands (+61)" },
+      { label: "Colombia (+57)", value: "Colombia (+57)" },
+      { label: "Comoros (+269)", value: "Comoros (+269)" },
+      { label: "Cook Islands (+682)", value: "Cook Islands (+682)" },
+      { label: "Costa Rica (+506)", value: "Costa Rica (+506)" },
+      { label: "Croatia (+385)", value: "Croatia (+385)" },
+      { label: "Cuba (+53)", value: "Cuba (+53)" },
+      { label: "Curacao (+599)", value: "Curacao (+599)" },
+      { label: "Cyprus (+357)", value: "Cyprus (+357)" },
+      { label: "Czech Republic (+420)", value: "Czech Republic (+420)" },
+      {
+        label: "Democratic Republic of the Congo (+243)",
+        value: "Democratic Republic of the Congo (+243)",
+      },
+      { label: "Denmark (+45)", value: "Denmark (+45)" },
+      { label: "Djibouti (+253)", value: "Djibouti (+253)" },
+      { label: "Dominica (+1-767)", value: "Dominica (+1-767)" },
+      {
+        label: "Dominican Republic (+1-809, +1-829, +1-849)",
+        value: "Dominican Republic (+1-809, +1-829, +1-849)",
+      },
+      { label: "East Timor (+670)", value: "East Timor (+670)" },
+      { label: "Ecuador (+593)", value: "Ecuador (+593)" },
+      { label: "Egypt (+20)", value: "Egypt (+20)" },
+      { label: "El Salvador (+503)", value: "El Salvador (+503)" },
+      {
+        label: "Equatorial Guinea (+240)",
+        value: "Equatorial Guinea (+240)",
+      },
+      { label: "Eritrea (+291)", value: "Eritrea (+291)" },
+      { label: "Estonia (+372)", value: "Estonia (+372)" },
+      { label: "Ethiopia (+251)", value: "Ethiopia (+251)" },
+      { label: "Falkland Islands (+500)", value: "Falkland Islands (+500)" },
+      { label: "Faroe Islands (+298)", value: "Faroe Islands (+298)" },
+      { label: "Fiji (+679)", value: "Fiji (+679)" },
+      { label: "Finland (+358)", value: "Finland (+358)" },
+      { label: "France (+33)", value: "France (+33)" },
+      { label: "French Polynesia (+689)", value: "French Polynesia (+689)" },
+      { label: "Gabon (+241)", value: "Gabon (+241)" },
+      { label: "Gambia (+220)", value: "Gambia (+220)" },
+      { label: "Georgia (+995)", value: "Georgia (+995)" },
+      { label: "Germany (+49)", value: "Germany (+49)" },
+      { label: "Ghana (+233)", value: "Ghana (+233)" },
+      { label: "Gibraltar (+350)", value: "Gibraltar (+350)" },
+      { label: "Greece (+30)", value: "Greece (+30)" },
+      { label: "Greenland (+299)", value: "Greenland (+299)" },
+      { label: "Grenada (+1-473)", value: "Grenada (+1-473)" },
+      { label: "Guam (+1-671)", value: "Guam (+1-671)" },
+      { label: "Guatemala (+502)", value: "Guatemala (+502)" },
+      { label: "Guernsey (+44-1481)", value: "Guernsey (+44-1481)" },
+      { label: "Guinea (+224)", value: "Guinea (+224)" },
+      { label: "Guinea-Bissau (+245)", value: "Guinea-Bissau (+245)" },
+      { label: "Guyana (+592)", value: "Guyana (+592)" },
+      { label: "Haiti (+509)", value: "Haiti (+509)" },
+      { label: "Honduras (+504)", value: "Honduras (+504)" },
+      { label: "Hong Kong (+852)", value: "Hong Kong (+852)" },
+      { label: "Hungary (+36)", value: "Hungary (+36)" },
+      { label: "Iceland (+354)", value: "Iceland (+354)" },
+      { label: "India (+91)", value: "India (+91)" },
+      { label: "Indonesia (+62)", value: "Indonesia (+62)" },
+      { label: "Iran (+98)", value: "Iran (+98)" },
+      { label: "Iraq (+964)", value: "Iraq (+964)" },
+      { label: "Ireland (+353)", value: "Ireland (+353)" },
+      { label: "Isle of Man (+44-1624)", value: "Isle of Man (+44-1624)" },
+      { label: "Israel (+972)", value: "Israel (+972)" },
+      { label: "Italy (+39)", value: "Italy (+39)" },
+      { label: "Ivory Coast (+225)", value: "Ivory Coast (+225)" },
+      { label: "Jamaica (+1-876)", value: "Jamaica (+1-876)" },
+      { label: "Japan (+81)", value: "Japan (+81)" },
+      { label: "Jersey (+44-1534)", value: "Jersey (+44-1534)" },
+      { label: "Jordan (+962)", value: "Jordan (+962)" },
+      { label: "Kazakhstan (+7)", value: "Kazakhstan (+7)" },
+      { label: "Kenya (+254)", value: "Kenya (+254)" },
+      { label: "Kiribati (+686)", value: "Kiribati (+686)" },
+      { label: "Kosovo (+383)", value: "Kosovo (+383)" },
+      { label: "Kuwait (+965)", value: "Kuwait (+965)" },
+      { label: "Kyrgyzstan (+996)", value: "Kyrgyzstan (+996)" },
+      { label: "Laos (+856)", value: "Laos (+856)" },
+      { label: "Latvia (+371)", value: "Latvia (+371)" },
+      { label: "Lebanon (+961)", value: "Lebanon (+961)" },
+      { label: "Lesotho (+266)", value: "Lesotho (+266)" },
+      { label: "Liberia (+231)", value: "Liberia (+231)" },
+      { label: "Libya (+218)", value: "Libya (+218)" },
+      { label: "Liechtenstein (+423)", value: "Liechtenstein (+423)" },
+      { label: "Lithuania (+370)", value: "Lithuania (+370)" },
+      { label: "Luxembourg (+352)", value: "Luxembourg (+352)" },
+      { label: "Macau (+853)", value: "Macau (+853)" },
+      { label: "Macedonia (+389)", value: "Macedonia (+389)" },
+      { label: "Madagascar (+261)", value: "Madagascar (+261)" },
+      { label: "Malawi (+265)", value: "Malawi (+265)" },
+      { label: "Malaysia (+60)", value: "Malaysia (+60)" },
+      { label: "Maldives (+960)", value: "Maldives (+960)" },
+      { label: "Mali (+223)", value: "Mali (+223)" },
+      { label: "Malta (+356)", value: "Malta (+356)" },
+      { label: "Marshall Islands (+692)", value: "Marshall Islands (+692)" },
+      { label: "Mauritania (+222)", value: "Mauritania (+222)" },
+      { label: "Mauritius (+230)", value: "Mauritius (+230)" },
+      { label: "Mayotte (+262)", value: "Mayotte (+262)" },
+      { label: "Mexico (+52)", value: "Mexico (+52)" },
+      { label: "Micronesia (+691)", value: "Micronesia (+691)" },
+      { label: "Moldova (+373)", value: "Moldova (+373)" },
+      { label: "Monaco (+377)", value: "Monaco (+377)" },
+      { label: "Mongolia (+976)", value: "Mongolia (+976)" },
+      { label: "Montenegro (+382)", value: "Montenegro (+382)" },
+      { label: "Montserrat (+1-664)", value: "Montserrat (+1-664)" },
+      { label: "Morocco (+212)", value: "Morocco (+212)" },
+      { label: "Mozambique (+258)", value: "Mozambique (+258)" },
+      { label: "Myanmar (+95)", value: "Myanmar (+95)" },
+      { label: "Namibia (+264)", value: "Namibia (+264)" },
+      { label: "Nauru (+674)", value: "Nauru (+674)" },
+      { label: "Nepal (+977)", value: "Nepal (+977)" },
+      { label: "Netherlands (+31)", value: "Netherlands (+31)" },
+      {
+        label: "Netherlands Antilles (+599)",
+        value: "Netherlands Antilles (+599)",
+      },
+      { label: "New Caledonia (+687)", value: "New Caledonia (+687)" },
+      { label: "New Zealand (+64)", value: "New Zealand (+64)" },
+      { label: "Nicaragua (+505)", value: "Nicaragua (+505)" },
+      { label: "Niger (+227)", value: "Niger (+227)" },
+      { label: "Nigeria (+234)", value: "Nigeria (+234)" },
+      { label: "Niue (+683)", value: "Niue (+683)" },
+      { label: "North Korea (+850)", value: "North Korea (+850)" },
+      {
+        label: "Northern Mariana Islands (+1-670)",
+        value: "Northern Mariana Islands (+1-670)",
+      },
+      { label: "Norway (+47)", value: "Norway (+47)" },
+      { label: "Oman (+968)", value: "Oman (+968)" },
+      { label: "Pakistan (+92)", value: "Pakistan (+92)" },
+      { label: "Palau (+680)", value: "Palau (+680)" },
+      { label: "Palestine (+970)", value: "Palestine (+970)" },
+      { label: "Panama (+507)", value: "Panama (+507)" },
+      { label: "Papua New Guinea (+675)", value: "Papua New Guinea (+675)" },
+      { label: "Paraguay (+595)", value: "Paraguay (+595)" },
+      { label: "Peru (+51)", value: "Peru (+51)" },
+      { label: "Philippines (+63)", value: "Philippines (+63)" },
+      { label: "Pitcairn (+64)", value: "Pitcairn (+64)" },
+      { label: "Poland (+48)", value: "Poland (+48)" },
+      { label: "Portugal (+351)", value: "Portugal (+351)" },
+      {
+        label: "Puerto Rico (+1-787, +1-939)",
+        value: "Puerto Rico (+1-787, +1-939)",
+      },
+      { label: "Qatar (+974)", value: "Qatar (+974)" },
+      {
+        label: "Republic of the Congo (+242)",
+        value: "Republic of the Congo (+242)",
+      },
+      { label: "Reunion (+262)", value: "Reunion (+262)" },
+      { label: "Romania (+40)", value: "Romania (+40)" },
+      { label: "Russia (+7)", value: "Russia (+7)" },
+      { label: "Rwanda (+250)", value: "Rwanda (+250)" },
+      { label: "Saint Barthelemy (+590)", value: "Saint Barthelemy (+590)" },
+      { label: "Saint Helena (+290)", value: "Saint Helena (+290)" },
+      {
+        label: "Saint Kitts and Nevis (+1-869)",
+        value: "Saint Kitts and Nevis (+1-869)",
+      },
+      { label: "Saint Lucia (+1-758)", value: "Saint Lucia (+1-758)" },
+      { label: "Saint Martin (+590)", value: "Saint Martin (+590)" },
+      {
+        label: "Saint Pierre and Miquelon (+508)",
+        value: "Saint Pierre and Miquelon (+508)",
+      },
+      {
+        label: "Saint Vincent and the Grenadines (+1-784)",
+        value: "Saint Vincent and the Grenadines (+1-784)",
+      },
+      { label: "Samoa (+685)", value: "Samoa (+685)" },
+      { label: "San Marino (+378)", value: "San Marino (+378)" },
+      {
+        label: "Sao Tome and Principe (+239)",
+        value: "Sao Tome and Principe (+239)",
+      },
+      { label: "Saudi Arabia (+966)", value: "Saudi Arabia (+966)" },
+      { label: "Senegal (+221)", value: "Senegal (+221)" },
+      { label: "Serbia (+381)", value: "Serbia (+381)" },
+      { label: "Seychelles (+248)", value: "Seychelles (+248)" },
+      { label: "Sierra Leone (+232)", value: "Sierra Leone (+232)" },
+      { label: "Singapore (+65)", value: "Singapore (+65)" },
+      { label: "Sint Maarten (+1-721)", value: "Sint Maarten (+1-721)" },
+      { label: "Slovakia (+421)", value: "Slovakia (+421)" },
+      { label: "Slovenia (+386)", value: "Slovenia (+386)" },
+      { label: "Solomon Islands (+677)", value: "Solomon Islands (+677)" },
+      { label: "Somalia (+252)", value: "Somalia (+252)" },
+      { label: "South Africa (+27)", value: "South Africa (+27)" },
+      { label: "South Korea (+82)", value: "South Korea (+82)" },
+      { label: "South Sudan (+211)", value: "South Sudan (+211)" },
+      { label: "Spain (+34)", value: "Spain (+34)" },
+      { label: "Sri Lanka (+94)", value: "Sri Lanka (+94)" },
+      { label: "Sudan (+249)", value: "Sudan (+249)" },
+      { label: "Suriname (+597)", value: "Suriname (+597)" },
+      {
+        label: "Svalbard and Jan Mayen (+47)",
+        value: "Svalbard and Jan Mayen (+47)",
+      },
+      { label: "Swaziland (+268)", value: "Swaziland (+268)" },
+      { label: "Sweden (+46)", value: "Sweden (+46)" },
+      { label: "Switzerland (+41)", value: "Switzerland (+41)" },
+      { label: "Syria (+963)", value: "Syria (+963)" },
+      { label: "Taiwan (+886)", value: "Taiwan (+886)" },
+      { label: "Tajikistan (+992)", value: "Tajikistan (+992)" },
+      { label: "Tanzania (+255)", value: "Tanzania (+255)" },
+      { label: "Thailand (+66)", value: "Thailand (+66)" },
+      { label: "Togo (+228)", value: "Togo (+228)" },
+      { label: "Tokelau (+690)", value: "Tokelau (+690)" },
+      { label: "Tonga (+676)", value: "Tonga (+676)" },
+      {
+        label: "Trinidad and Tobago (+1-868)",
+        value: "Trinidad and Tobago (+1-868)",
+      },
+      { label: "Tunisia (+216)", value: "Tunisia (+216)" },
+      { label: "Turkey (+90)", value: "Turkey (+90)" },
+      { label: "Turkmenistan (+993)", value: "Turkmenistan (+993)" },
+      {
+        label: "Turks and Caicos Islands (+1-649)",
+        value: "Turks and Caicos Islands (+1-649)",
+      },
+      { label: "Tuvalu (+688)", value: "Tuvalu (+688)" },
+      {
+        label: "U.S. Virgin Islands (+1-340)",
+        value: "U.S. Virgin Islands (+1-340)",
+      },
+      { label: "Uganda (+256)", value: "Uganda (+256)" },
+      { label: "Ukraine (+380)", value: "Ukraine (+380)" },
+      {
+        label: "United Arab Emirates (+971)",
+        value: "United Arab Emirates (+971)",
+      },
+      { label: "United Kingdom (+44)", value: "United Kingdom (+44)" },
+      { label: "United States (+1)", value: "United States (+1)" },
+      { label: "Uruguay (+598)", value: "Uruguay (+598)" },
+      { label: "Uzbekistan (+998)", value: "Uzbekistan (+998)" },
+      { label: "Vanuatu (+678)", value: "Vanuatu (+678)" },
+      { label: "Vatican (+379)", value: "Vatican (+379)" },
+      { label: "Venezuela (+58)", value: "Venezuela (+58)" },
+      { label: "Vietnam (+84)", value: "Vietnam (+84)" },
+      {
+        label: "Wallis and Futuna (+681)",
+        value: "Wallis and Futuna (+681)",
+      },
+      { label: "Western Sahara (+212)", value: "Western Sahara (+212)" },
+      { label: "Yemen (+967)", value: "Yemen (+967)" },
+      { label: "Zambia (+260)", value: "Zambia (+260)" },
+      { label: "Zimbabwe (+263)", value: "Zimbabwe (+263)" },
+    ];
+  </script>
+  <script>
+    const selectElement = document.getElementById("i-code-phone");
+    const selectElement2 = document.getElementById("i-code-phone-company");
+
+    countryCodes.forEach((country) => {
+      const option = document.createElement("option");
+      option.textContent = country.label;
+      option.value = country.value;
+      selectElement.appendChild(option);
+    });
+    countryCodes.forEach((country) => {
+      const option = document.createElement("option");
+      option.textContent = country.label;
+      option.value = country.value;
+      selectElement2.appendChild(option);
+    });
+  </script>
+
+  <script>
+    document.querySelector(".transToVi").onclick = () => {
+      doGTranslate("vi|vi");
+    };
+    document.querySelector(".transtoEn").onclick = () => {
+      doGTranslate("vi|en");
+    };
+    function GTranslateGetCurrentLang() {
+      var keyValue = document["cookie"].match(
+        "(^|;) ?googtrans=([^;]*)(;|$)"
+      );
+      return keyValue ? keyValue[2].split("/")[2] : null;
+    }
+    function GTranslateFireEvent(element, event) {
+      try {
+        if (document.createEventObject) {
+          var evt = document.createEventObject();
+          element.fireEvent("on" + event, evt);
+        } else {
+          var evt = document.createEvent("HTMLEvents");
+          evt.initEvent(event, true, true);
+          element.dispatchEvent(evt);
+        }
+      } catch (e) { }
+    }
+    function doGTranslate(lang_pair) {
+      if (lang_pair.value) lang_pair = lang_pair.value;
+      if (lang_pair == "") return;
+      var lang = lang_pair.split("|")[1];
+      if (
+        GTranslateGetCurrentLang() == null &&
+        lang == lang_pair.split("|")[0]
+      )
+        return;
+      if (typeof ga == "function") {
+        ga(
+          "send",
+          "event",
+          "GTranslate",
+          lang,
+          location.hostname + location.pathname + location.search
+        );
+      }
+      var teCombo;
+      var sel = document.getElementsByTagName("select");
+      for (var i = 0; i < sel.length; i++)
+        if (sel[i].className.indexOf("goog-te-combo") != -1) {
+          teCombo = sel[i];
+          break;
+        }
+      if (
+        document.getElementById("google_translate_element2") == null ||
+        document.getElementById("google_translate_element2").innerHTML
+          .length == 0 ||
+        teCombo.length == 0 ||
+        teCombo.innerHTML.length == 0
+      ) {
+        setTimeout(function () {
+          doGTranslate(lang_pair);
+        }, 500);
+      } else {
+        teCombo.value = lang;
+        GTranslateFireEvent(teCombo, "change");
+        GTranslateFireEvent(teCombo, "change");
+      }
+    }
+  </script>
+  <div id="google_translate_element2" style="opacity: 0; visibility: hidden; height: 0"></div>
+</body>
+
+</html>

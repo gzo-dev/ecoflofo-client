@@ -1,0 +1,28 @@
+<svg width="40" height="23" viewBox="0 0 40 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="&#240;&#159;&#166;&#134; icon &#34;Japan&#34;">
+<g id="Mask group">
+<mask id="mask0_452_1007" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="23">
+<g id="Group">
+<path id="Vector" d="M0.29248 0.726685H39.8367V22.8588H0.29248V0.726685Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_452_1007)">
+<g id="Group_2">
+<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M0.29248 0.726685V22.8588H39.8367V0.726685H0.29248Z" fill="#F7FCFF"/>
+<g id="Mask group_2">
+<mask id="mask1_452_1007" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="23">
+<g id="Group_3">
+<path id="Vector_3" fill-rule="evenodd" clip-rule="evenodd" d="M0.29248 0.726685V22.8588H39.8367V0.726685H0.29248Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask1_452_1007)">
+<g id="Group_4">
+<path id="Vector_4" fill-rule="evenodd" clip-rule="evenodd" d="M20.0645 18.7091C25.1831 18.7091 29.3326 15.6125 29.3326 11.7928C29.3326 7.97299 25.1831 4.87646 20.0645 4.87646C14.9459 4.87646 10.7964 7.97299 10.7964 11.7928C10.7964 15.6125 14.9459 18.7091 20.0645 18.7091Z" fill="#E31D1C"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
